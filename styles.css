@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Lucida Handwriting", "Courier New", cursive;
+}
+
+body {
+    padding: 2rem;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.hide {
+    display: none;
+}
+
+.header {
+    display: flex;
+    margin-top: 2.5rem;
+    width: 100%;
+    margin-inline: auto;
+    filter: drop-shadow(5px 5px 20px rgba(0, 0, 0, 0.2));
+    font-size: 50px;
+    justify-content: center;
+    text-align: center;
+}
+
+.container {
+    flex: 1;
+    position: relative;
+    isolation: isolate;
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+}
+
+.img-1,
+.img-2,
+.img-3,
+.img-4,
+.img-5 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.img-1 {
+    width: 375px;
+}
+
+.img-2,
+.img-3 {
+    width: 275px;
+}
+
+.img-4 {
+    width: 450px;
+}
+
+.btn {
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    top: calc(100% - 5rem);
+    min-width: 120px;
+    padding: .75rem 1rem;
+    font-size: 1.25rem;
+    outline: none;
+    border: none;
+    background-color: #FFB6C1;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #DB7093;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-yes {
+    left: 50%;
+    transform: translate(calc(-100% - 5rem));
+    z-index: 1;
+}
+
+.btn-yes1 {
+    left: calc(50%);
+    transition: all 0.5s ease;
+    z-index: 2;
+}
+
+.btn-no {
+    left: calc(50% + 1rem);
+    transition: all 0.5s ease;
+    z-index: 2;
+}
+
+.btn-no1 {
+    left: calc(60% + 1rem);
+    transition: all 0.5s ease;
+    z-index: 2;
+}
+
+.btn-joke {
+    left: 60%;
+    transform: translate(calc(-100% - 5rem));
+    z-index: 1;
+}
+
+.btn-sorry{
+    transition: all 0.5s ease;
+    z-index: 1;
+    transform: translate(calc(111%));
+}
